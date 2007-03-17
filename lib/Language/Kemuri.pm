@@ -2,7 +2,7 @@ package Language::Kemuri;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 use Exporter;
 use Switch;
 our @EXPORT_OK = qw/kemuri/;
@@ -16,7 +16,7 @@ sub kemuri {
     for my $c ( split //, $code ) {
         switch ($c) {
             case '`' {
-                push @stack, reverse map { ord $_ } split //, 'Hello, world!';
+                push @stack, unpack("C*", reverse "Hello, world!");
             }
             case '"' {
                 my $x = pop @stack;
