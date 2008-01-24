@@ -1,9 +1,8 @@
 --- 
 abstract: Kemuri Interpreter.
-author: 
-  - Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>
+author: Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>
 distribution_type: module
-generated_by: Module::Install version 0.68
+generated_by: Module::Install version 0.650
 license: perl
 meta-spec: 
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
@@ -15,4 +14,4 @@ no_index:
     - t
 requires: 
   Switch: 0
-version: 0.04
+version: 0.05
